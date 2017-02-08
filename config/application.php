@@ -44,6 +44,7 @@ return array(
 	'PasswordMinLower'     => 1,                        // Number of lower-case letters to require in passwords.
 	'PasswordMinNumber'    => 1,                        // Number of numbers to require in passwords.
 	'PasswordMinSymbol'    => 0,                        // Number of symbols to require in passwords.
+	'EmailStrictCheck'     => false,                    // Whether to enable stricter checks for email addresses. (NOTE: there are perfectly valid email addresses that will be rejected if this setting is enabled).
 	'GMMinPasswordLength'  => 8,                        // Minimum password length for GM accounts.
 	'GMPasswordMinUpper'   => 1,                        // Number of upper-case letters to require in passwords for GM accounts.
 	'GMPasswordMinLower'   => 1,                        // Number of lower-case letters to require in passwords for GM accounts.
@@ -100,6 +101,7 @@ return array(
 		//'admin2@localhost',                             // -- This array may be empty if you only use one e-mail
 		//'admin3@localhost'                              // -- because your Business Email is also checked.
 	),
+	'PaypalHackNotify'     => true,                     // Send email notification if hack attempt detected (Notification will be send for each address in list PayPalBusinessEmail and PayPalReceiverEmails)
 	'GStorageLeaderOnly'   => false,                    // Only allow guild leader to view guild storage rather than all members?
 	'DivorceKeepChild'     => false,                    // Keep child after divorce?
 	'DivorceKeepRings'     => false,                    // Keep wedding rings after divorce?
